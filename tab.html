@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/css/base.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/theme.blue.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Tab</title>
+    </head>
+    <body class="dark">
+        <ul id="ticker"></ul>
+        <div id="icons"></div>
+        <div id="header">
+            <!-- <div class="nav">
+                <a href="#" id="default">Your Apps</a>
+                <a href="https://chrome.google.com/webstore/search-extensions/64px">Chrome Web Store</a>
+                <a href="#" id="notepad_toggle">Notepad</a>
+            </div>
+		-->
+            <div id="header_line"></div>
+        </div>
+        <div id="notepad">
+            <textarea></textarea>
+        </div>
+        <div id="apps">
+        
+                <a href="#" id="options_toggle"><div class="awesome">&#xf013;</div></a>
+        </div>
+        <div id="options_wrap">
+            <div id="options">
+                <div class="settings">
+                    <h2>Modules</h2>
+                    <ul id="opt_boxes">
+                        <li><input type="checkbox" id="opt_hideclock" /> <label for="opt_hideclock">Disable Clock</label></li>
+                        <li><input type="checkbox" id="opt_hideemail" /> <label for="opt_hideemail">Disable Gmail</label></li>
+                        <li><input type="checkbox" id="opt_hidenews" /> <label for="opt_hidenews">Disable Top News</label></li>
+                        <li><input type="checkbox" id="opt_hidefacebook" /> <label for="opt_hidefacebook">Disable Facebook</label></li>
+                        <li><input type="checkbox" id="opt_hideword" /> <label for="opt_hideword">Disable Word of The Day</label></li>
+                        <li><input type="checkbox" id="opt_hideweather" /> <label for="opt_hideweather">Disable Weather</label></li>
+                        <h2>Clock</h2>
+                        <li><input type="checkbox" id="opt_24" /> <label for="opt_24">Use 24 hour clock</label></li>
+                        <h2>Stock Tickers (separate with commas)</h2>
+                        <li>
+                            <input type="text" id="opt_stocksymbol" placeholder="Stock Symbol" />
+                        </li>
+                        <h2>Weather Options</h2>
+                        <li><input type="checkbox" id="opt_celcius" /> <label for="opt_celcius">Use Celsius</label></li>
+                        <li>
+                            <input type="text" id="opt_weatherzip" placeholder="Weather Postal Code (01930)" />
+                        </li>
+                        <h2>News Source</h2>
+                        <li>
+                            <select id="opt_newsrss">
+                                <option value="top">Google Top News</option>
+                                <option value="bbc_top">BBC Top News</option>
+                                <option value="bbc_world">BBC World News</option>
+                                <option value="cnn_europe">CNN Europe</option>
+                                <option value="us">Google US</option>
+                                <option value="science">Google Science</option>
+                                <option value="technology">Google Technology</option>
+                                <option value="business">Google Business</option>
+                                <option value="entertainment">Google Entertainment</option>
+                                <option value="sports">Google Sports</option>
+                                <option value="health">Google Health</option>
+                                <option value="hacker">Hacker News</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="static/js/require.js" data-main="static/js/base.js"></script>
+    </body>
+</html>
